@@ -1,0 +1,8 @@
+<svg width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd" opacity="0.04">
+    <rect width="800" height="800" fill="black"></rect>
+    <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" font-family="Impact, sans-serif" font-size="160" fill="white" letter-spacing="10">
+      FURIA
+    </text>
+  </g>
+</svg>
