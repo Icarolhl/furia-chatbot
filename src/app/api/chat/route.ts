@@ -12,7 +12,7 @@ export async function POST(req: NextRequest) {
       headers: {
         'Authorization': `Bearer ${process.env.OPENROUTER_API_KEY}`,
         'Content-Type': 'application/json',
-        'HTTP-Referer': 'https://vercel.com/icaro-limas-projects/furia-chatbot',
+        'HTTP-Referer': 'https://furia-chatbot-zeta.vercel.app/',
         'X-Title': 'furia-chatbot'
       },
       body: JSON.stringify({
