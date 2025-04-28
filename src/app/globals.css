@@ -21,7 +21,6 @@ body {
   background-repeat: repeat;
 }
 
-/* Scrollbar estilizada */
 ::-webkit-scrollbar {
   width: 8px;
 }
