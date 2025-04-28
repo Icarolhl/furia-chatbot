@@ -24,7 +24,7 @@ Construído com tecnologias modernas como **Next.js 15**, **React 19** e **TypeS
 | TypeScript | 5 |
 | TailwindCSS | 3 |
 | Framer Motion | 10 |
-| OpenRouter / OpenAI API | Sistema híbrido |
+| OpenRouter / OpenAI API | GPT 3.5 Turbo |
 
 ---
 
