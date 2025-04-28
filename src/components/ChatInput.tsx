@@ -1,3 +1,5 @@
+"use client";
+
 import { useState } from "react";
 
 type Props = {
@@ -9,7 +11,8 @@ export default function ChatInput({ onSend }: Props) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    onSend(input);
+    if (!input.trim()) return;
+    onSend(input.trim());
     setInput("");
   };
 

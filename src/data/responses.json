@@ -1,0 +1,21 @@
+{
+  "responses": {
+    "cs": ["Aqui estão os jogadores do time de CS:GO da FURIA! 👇"],
+    "valorant": ["Aqui estão os jogadores do time de Valorant da FURIA! 👇"],
+    "lol": ["Aqui estão os jogadores do time de League of Legends da FURIA! 👇"],
+    "jogos cs": ["Aqui estão os jogos do time de CS:GO da FURIA! 👇"],
+    "jogos valorant": ["Aqui estão os jogos do time de Valorant da FURIA! 👇"],
+    "jogos lol": ["Aqui estão os jogos do time de League of Legends da FURIA! 👇"],
+    "quiz": ["Modo quiz ainda está em construção. Fica ligado! 👀"],
+    "curiosidade": ["Você sabia que a FURIA foi top 3 mundial em 2021? 🔥"],
+    "ajuda": ["Claro! Escolha uma opção abaixo 👇"],
+    "fallback": [
+      "Hmm, não entendi muito bem... Digite 'ajuda' para ver as opções disponíveis! 👀",
+      "Ainda estou aprendendo! Tente Digitar 'ajuda' para descobrir o que posso responder. 🚀",
+      "Essa foi difícil! Digite 'ajuda' e veja o que eu sei fazer! 🔥"
+    ],
+    "jogadores pergunta": ["Sobre qual time você quer saber? 🎯"],
+    "jogos pergunta": ["Sobre qual modalidade você quer saber os jogos? 🎮"],
+    "intro": ["E aí, FURIOSO(A)! 👊 Sou o bot da FURIA. Manda aí sua pergunta!"]
+  }
+}

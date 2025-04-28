@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
+# 🦊 FURIA BOT — Chatbot de Fãs da FURIA Esports
 
-First, run the development server:
+Bem-vindo ao **FURIA BOT**, o chatbot oficial para os torcedores apaixonados da **FURIA Esports**!  
+Construído com tecnologias modernas como **Next.js 15**, **React 19** e **TypeScript**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🚀 Visão Geral do Projeto
+
+- **Chatbot interativo** usando API de IA (OpenAI ou OpenRouter).
+- **Modelo híbrido**: se a IA falhar, o sistema inteligente de palavras-chave assume automaticamente.
+- **Responsivo**, com sons de notificação e animações suaves.
+- Respostas curtas, enérgicas e divertidas — personalidade única do FURIA BOT!
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+| Tecnologia | Versão |
+|:---|:---|
+| Next.js | 15 |
+| React | 19 |
+| TypeScript | 5 |
+| TailwindCSS | 3 |
+| Framer Motion | 10 |
+| OpenRouter / OpenAI API | Sistema híbrido |
+
+---
+
+## 📂 Estrutura de Pastas
+
+```
+furia-chatbot/
+├── public/
+│   ├── sounds/ (sons de notificação)
+│   ├── avatar-furia.png (avatar do bot)
+│   └── favicon.ico (icone do site)
+├── src/
+│   ├── app/ (páginas e rotas)
+│   ├── components/ (componentes do chatbot)
+│   └── data/ (respostas pré-programadas)  
+├── .gitignore
+├── .gitattributes
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tailwind.config.ts
+├── tsconfig.json
+└── README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🧠 Como Funciona
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Usuário envia uma mensagem para o bot.
+- O sistema tenta primeiro responder usando IA (OpenRouter/OpenAI).
+- Se houver erro ou timeout, **o fallback inteligente baseado em palavras-chave assume**.
+- Comando "ajuda" mostra botões interativos para facilitar a navegação.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🛡️ Funcionalidades
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Modelo híbrido (IA + Respostas programadas)
+- Bot com tom jovem, divertido e acolhedor
+- Animações de typing para realismo
+- Projeto SEO-friendly e mobile-first
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## ⚙️ Instalação e Execução Local
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Clonar o repositório
+git clone https://github.com/seu-usuario/furia-chatbot.git
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# Instalar dependências
+npm install
+
+# Rodar em ambiente local
+npm run dev
+```
+
+Acesse: [http://localhost:3000](http://localhost:3000)
+
+---
+
+## 📦 Build para Produção
+
+```bash
+npm run build
+npm run start
+```
+
+---
+
+## 🔑 Configuração de Variáveis de Ambiente
+
+Este projeto utiliza variáveis de ambiente para funcionar corretamente.
+
+Crie um arquivo chamado `.env.local` na raiz do projeto e adicione a seguinte chave:
+
+```bash
+# Chave de API para OpenRouter ou OpenAI
+OPENROUTER_API_KEY=your-openrouter-api-key-here
+```
+
+---
+
+## 📢 Aviso
+
+> Este projeto foi desenvolvido como parte de um desafio técnico para a equipe **FURIA Esports**.  
+> Todos os direitos sobre a marca FURIA são reservados à organização.

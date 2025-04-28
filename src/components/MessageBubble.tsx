@@ -1,3 +1,5 @@
+"use client";
+
 type Props = {
   from: "user" | "bot";
   text: string;
@@ -27,8 +29,11 @@ export default function MessageBubble({ from, text }: Props) {
           {senderName}
         </span>
         <div
-          className={`px-5 py-3 rounded-2xl text-sm leading-relaxed shadow-sm 
-            ${isUser ? "bg-purple-600 text-white self-end" : "bg-zinc-800 text-zinc-100"}`}
+          className={`px-5 py-3 rounded-2xl text-sm leading-relaxed shadow-sm ${
+            isUser
+              ? "bg-purple-600 text-white self-end"
+              : "bg-zinc-800 text-zinc-100"
+          }`}
         >
           {text}
         </div>
