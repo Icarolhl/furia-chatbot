@@ -54,7 +54,7 @@ export default function Home() {
       </div>
 
       <p className="text-xs text-zinc-600 italic">
-        Código aberto no GitHub!
+        Feito com ❤️ por Icaro!
       </p>
     </motion.main>
   );
