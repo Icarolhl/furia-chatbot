@@ -143,34 +143,31 @@ export default function ChatBox() {
 
   const handleSend = async (text: string) => {
     if (!text.trim()) return;
-
-    setMessages((prev) => [
-      ...prev,
-      { from: "user", type: "text", text: text.trim() },
-    ]);
+  
+    setMessages((prev) => [...prev, { from: "user", type: "text", text: text.trim() }]);
     setIsTyping(true);
     setShowHelpOptions(false);
     setSpecialMode(null);
-
+  
     try {
       const recent = messages.slice(-5).map((m) => ({
         role: m.from === "user" ? "user" : "assistant",
         content: m.text,
       }));
-
+  
       const payload = [...recent, { role: "user", content: text.trim() }];
-
+  
       const res = await fetch("/api/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ messages: payload }),
       });
-
+  
       if (!res.ok) throw new Error();
-
+  
       const data = await res.json();
       const botMsg = data.reply;
-
+  
       setTimeout(() => {
         setMessages((prev) => [
           ...prev,
@@ -180,7 +177,10 @@ export default function ChatBox() {
         playNotificationSound();
       }, Math.random() * (2700 - 1200) + 1200);
     } catch (error) {
+      console.error("Erro ao tentar enviar mensagem para a API de IA:", error);
+  
       const fallback = simulateBotResponse(text);
+  
       setTimeout(() => {
         setMessages((prev) => [...prev, ...fallback]);
         setIsTyping(false);
@@ -188,7 +188,7 @@ export default function ChatBox() {
       }, Math.random() * (2700 - 1200) + 1200);
     }
   };
-
+  
   const handleOptionSelect = (key: string) => {
     const formatted = capitalize(key);
 
