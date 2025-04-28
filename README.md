@@ -4,7 +4,6 @@
 Bem-vindo ao **FURIA BOT**, o chatbot oficial para os torcedores apaixonados da **FURIA Esports**!  
 Construído com tecnologias modernas como **Next.js 15**, **React 19** e **TypeScript**.
 
----
 
 ## 🚀 Visão Geral do Projeto
 
@@ -13,7 +12,6 @@ Construído com tecnologias modernas como **Next.js 15**, **React 19** e **TypeS
 - **Responsivo**, com sons de notificação e animações suaves.
 - Respostas curtas, enérgicas e divertidas — personalidade única do FURIA BOT!
 
----
 
 ## 🛠️ Tecnologias Utilizadas
 
